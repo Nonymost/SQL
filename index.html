@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        background-color: beige;
+    }
+
+    .container {
+        margin-top: 10px;
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(100, 100, 100);
+        border-radius: 10px;
+    }
+
+    button {
+        border-radius: 5px;
+        border: 1px solid gray;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        margin: 10px;
+        justify-content: space-evenly
+    }
+    .field{
+        margin-top: 10px;
+        width:30%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+
+
+<body>
+    <div class="container">
+        <form class="field" action="./backend/createDB.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" id="class">
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+</form>
+        <div class="buttons">
+            <button><a href="./backend/createDB.php">Create</a></button>
+            <button>Remove</button>
+            <button>Update</button>
+            <button>Delete</button>
+        </div>
+    </div>
+</body>
+
+</html>
