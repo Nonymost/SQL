@@ -58,20 +58,20 @@
 
 <body>
     <div class="container">
-        <form class="field" action="./backend/createDB.php">
-            <label for="name">Name:</label>
-            <input type="text" id="name" id="class">
+        <form class="field" action="./backend/createDB.php" method="post">
+            <label for="name" >Name:</label>
+            <input type="text" id="name" value="" name="name">
             <label for="class">Class:</label>
-            <input type="text" id="class" name="class">
+            <input type="text" id="class" value="" name="class">
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age">
-</form>
-        <div class="buttons">
-            <button><a href="./backend/createDB.php">Create</a></button>
-            <button>Remove</button>
-            <button>Update</button>
-            <button>Delete</button>
-        </div>
+            <input type="number" id="age" value="" name="age">
+            <div class="buttons">
+                <button type="submit">Create</button>
+            </div>
+        </form>
+        <button>Remove</button>
+        <button>Update</button>
+        <button>Delete</button>
     </div>
 </body>
 

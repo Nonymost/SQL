@@ -15,3 +15,6 @@
 );"
 
 "DROP TABLE tableName";
+
+Learned about how to insert, alter, delete data
+will use postgresql
