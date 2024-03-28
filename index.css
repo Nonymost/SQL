@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+
+.container {
+    margin-top: 10px;
+    width: 80%;
+    height:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 20px;
+    cursor: pointer;
+}
+form{
+    width:100%;
+    /* background-color: red; */
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+
+}
+.field{
+    margin-top: 10px;
+    width:30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}

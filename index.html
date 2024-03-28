@@ -5,73 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-    * {
-        box-sizing: border-box;
-        margin: 0px;
-    }
-
-    body {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        background-color: beige;
-    }
-
-    .container {
-        margin-top: 10px;
-        width: 80%;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(100, 100, 100);
-        border-radius: 10px;
-    }
-
-    button {
-        border-radius: 5px;
-        border: 1px solid gray;
-        height: 20px;
-        cursor: pointer;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: row;
-        width: 35%;
-        margin: 10px;
-        justify-content: space-evenly
-    }
-    .field{
-        margin-top: 10px;
-        width:30%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-</style>
-
-
 
 <body>
     <div class="container">
         <form class="field" action="./backend/createDB.php" method="post">
-            <label for="name" >Name:</label>
-            <input type="text" id="name" value="" name="name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
             <label for="class">Class:</label>
-            <input type="text" id="class" value="" name="class">
+            <input type="text" id="class"  name="class">
             <label for="age">Age:</label>
-            <input type="number" id="age" value="" name="age">
+            <input type="number" id="age"  name="age">
             <div class="buttons">
                 <button type="submit">Create</button>
+                <button>Remove</button>
+                <button>Update</button>
+                <button>Delete</button>
             </div>
         </form>
-        <button>Remove</button>
-        <button>Update</button>
-        <button>Delete</button>
     </div>
 </body>
 
