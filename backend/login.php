@@ -4,7 +4,7 @@ $password = $_POST["password"];
 
 if (isset($user, $password)) {
     if (($user == "arpharmacy") && ($password == "maharjan@ab")) {
-        header("Location: ../home.html");
+        header("Location: ../home.php");
         exit;
     } else {
         echo "invalid username or password";
