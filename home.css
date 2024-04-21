@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+#party{
+    background-color: red;
+    border:1px solid black;
+    border-radius:5px;
+    height:50px;
+    /* width:50%; */
+    padding:10px;
+}
+#party:hover{
+    background-color:whitesmoke;
+}
+#container{
+    /* background-color: blue; */
+    padding:10px;
+    width:100vw;
+    display:grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template: 50% 50% ; */
+}

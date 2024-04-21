@@ -4,25 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="container">
-        <form class="field" action="./backend/createDB.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="class">Class:</label>
-            <input type="text" id="class"  name="class">
-            <label for="age">Age:</label>
-            <input type="number" id="age"  name="age">
-            <div class="buttons">
-                <button type="submit">Create</button>
-                <button>Remove</button>
-                <button>Update</button>
-                <button>Delete</button>
+    <div id="container">
+        <form method="post" action="./backend/login.php" id="form">
+            <div id="userField">
+                <label for="user">User:</label>
+                <input type="text" name="user" id="user">
             </div>
+            <div id="passwordField">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <button type="submit">Login</button>
         </form>
     </div>
 </body>

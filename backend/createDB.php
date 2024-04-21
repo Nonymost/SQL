@@ -29,8 +29,9 @@ if(isset($name,$class,$age)){
     $stmt = mysqli_prepare($conn, $sqlquery);
     mysqli_stmt_bind_param($stmt, "sii", $name, $class, $age);
     if (mysqli_stmt_execute($stmt)) {
-        echo "Data inserted successfully";
-        header("./index.html");
+        // echo "Data inserted successfully";
+        header("Location: ../index.html");
+        exit;
     } else {
         echo "Error inserting data: " . mysqli_error($conn);
     }
@@ -42,6 +43,6 @@ mysqli_stmt_close($stmt);
 // $sql = "SELECT * FROM student";
 // mysqli_query($conn,$sqlquery);
 // echo "<p>$result</p>";
-mysqli_close($conn);
+// mysqli_close($conn);
 
 ?>
