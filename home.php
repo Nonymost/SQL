@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <form method="post" action="./backend/create.php">
+    <form method="post" action="./backend/formHandler.php">
         <input type="text" name="name" id="name">
-        <button type="submit" name="submit">Create</button>
+        <button type="submit" name="submit" value="create">Create</button>
+        <button type="submit" name="submit" value="delete">Delete</button>
     </form>
     <?php
     $conn = mysqli_connect("localhost", "root", "", "testing");
@@ -20,11 +21,11 @@
         $sql = "SHOW TABLES";
         $result = mysqli_query($conn, $sql);
 
-        echo"<div id='container'>";
+        echo "<div id='container'>";
         while ($row = mysqli_fetch_row($result)) {
-            echo "<div id='party'>" . $row[0] ."<a href='./backend/delete.php'>DELETE</a> "."</div>";
+            echo "<div id='party' name=$row[0]>" . $row[0] . "</div>";
         }
-        echo"</div>";
+        echo "</div>";
     } else {
         echo "ERROR:" . mysqli_error($conn);
     }
