@@ -29,6 +29,24 @@ if (isset($_GET['name'])) {
         <button type="submit">Submit</button>
     </form>
     <div>
+        <div>
+            <ul type="none">
+                <li><a href="data.php?id=1">1</a></li>
+                <li><a href="data.php?id=2">2</a></li>
+                <li><a href="data.php?id=3">3</a></li>
+                <li><a href="data.php?id=4">4</a></li>
+                <li><a href="data.php?id=5">5</a></li>
+                <li><a href="data.php?id=5">6</a></li>
+                <li><a href="data.php?id=5">7</a></li>
+                <li><a href="data.php?id=5">8</a></li>
+                <li><a href="data.php?id=5">9</a></li>
+                <li><a href="data.php?id=5">10</a></li>
+                <li><a href="data.php?id=5">11</a></li>
+                <li><a href="data.php?id=5">12</a></li>
+                
+                </ul>
+            </div>
+        <br>
     <table>
         <thead>
         <tr>

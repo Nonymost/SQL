@@ -17,7 +17,7 @@ if ((isset($_POST['name'])) && ($_POST['name'] !== "")) {
     credit FLOAT NOT NULL,
     debit FLOAT NOT NULL,
     discount FLOAT NOT NULL,
-    date DATE NOT NULL,
+    date VARCHAR(10) NOT NULL,
     PRIMARY KEY(id)
 
     

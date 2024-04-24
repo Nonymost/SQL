@@ -12,7 +12,7 @@ if (isset($_GET['name'])) {
         $name = $_GET['name'];
         $sql = 'INSERT INTO ' . $name . '(invoice,credit,debit,discount,date)' . 'VALUES (?,?,?,?,?)';
         $stmt = mysqli_prepare($conn, $sql);
-        mysqli_stmt_bind_param($stmt, "iddds", $invoice, $credit, $debit, $discount, $date);
+        mysqli_stmt_bind_param($stmt, "sddds", $invoice, $credit, $debit, $discount, $date);
         if (mysqli_stmt_execute($stmt)) {
             header("Location: dataForm.php?name=$name");
             exit();
@@ -20,6 +20,8 @@ if (isset($_GET['name'])) {
             echo "error statement";
         }
         mysqli_stmt_close($stmt);
+    }else{
+        echo "error";
     }
     
 }
