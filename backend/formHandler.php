@@ -5,6 +5,7 @@ $user = "root";
 $password = "";
 $conn = mysqli_connect($server, $user, $password, "testing");
 
+// include("connection.php");
 
 if ((isset($_POST['name'])) && ($_POST['name'] !== "")) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -12,9 +13,10 @@ if ((isset($_POST['name'])) && ($_POST['name'] !== "")) {
 
         $sql = "CREATE TABLE `$name`(
     id INT AUTO_INCREMENT,
-    credit INT NOT NULL,
-    debit INT NOT NULL,
-    discount INT NOT NULL,
+    invoice VARCHAR(25) NOT NULL,
+    credit FLOAT NOT NULL,
+    debit FLOAT NOT NULL,
+    discount FLOAT NOT NULL,
     date DATE NOT NULL,
     PRIMARY KEY(id)
 

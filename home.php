@@ -16,6 +16,7 @@
     </form>
     <?php
     $conn = mysqli_connect("localhost", "root", "", "testing");
+
     // $i = 0;
     if ($conn) {
         $sql = "SHOW TABLES";
@@ -23,7 +24,8 @@
 
         echo "<div id='container'>";
         while ($row = mysqli_fetch_row($result)) {
-            echo "<div id='party' name=$row[0]>" . $row[0] . "</div>";
+            echo "<a href='./dataForm.php?name=$row[0]'><div id='party' name=$row[0]>" . $row[0] . "</div></a>";
+
         }
         echo "</div>";
     } else {
